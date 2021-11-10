@@ -4,7 +4,7 @@
 
 ## 11월 10일 과제 
 
-`navigation css` + `join us 팀별 페이지` 클론
+사이트 
 
 ### branch규칙
 
