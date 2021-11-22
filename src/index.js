@@ -5,7 +5,10 @@ import App from './App';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <BrowerRouter>
+      <App />
+    </BrowerRouter>
+
   </React.StrictMode>,
   document.getElementById('root'),
 );
