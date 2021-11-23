@@ -1,5 +1,5 @@
-import React from 'react';
-import { useNavigate } from 'react-router-dom';
+import React from "react";
+import { useNavigate } from "react-router-dom";
 
 const Navigation = () => {
   const navigate = useNavigate();
@@ -7,7 +7,7 @@ const Navigation = () => {
     <>
       <div
         onClick={() => {
-          navigate('/introduce');
+          navigate("/introduce");
         }}
       >
         소개

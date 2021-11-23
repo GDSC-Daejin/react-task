@@ -1,4 +1,6 @@
 import React from "react";
+import GreenBanner from "../img/GreenBanner.png";
+import { memberList } from "../memberlist";
 
 const Introduce = () => {
   const introduceText =
@@ -8,6 +10,7 @@ const Introduce = () => {
     "학생이 성장할 수 있도록 전세계의 학생 Lead들과의 교류 기회, Google의 이벤트 참여, 현업 엔지니어와의 만남 등 다양한 기회를 제공하고 쇼케이스,워크샵을 통해 역량을 높일 수 있도록 돕습니다. ";
   return (
     <>
+      <img src={GreenBanner} />
       <div className="App">
         <h1>About us</h1>
         <h3>Google Developer Student Club 소개</h3>
@@ -31,8 +34,16 @@ const Introduce = () => {
           모르는 것을 질문하고 정보를 공유하며 활발한 커뮤니티를 만듭니다.
         </li>
       </ul>
-      <br />
-      <h1>팀 소개</h1>
+      <div className="TopMargin" />
+      <div className="Title">팀 소개</div>
+      <div className="TopMargin" />
+      <div className="CardList">
+        {memberList.map((memberInfo, id) => (
+          <div className="MemberCardWrapper" key={id}>
+            <div className="MemberCard">{memberInfo}</div>
+          </div>
+        ))}
+      </div>
     </>
   );
 };
