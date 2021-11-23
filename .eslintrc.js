@@ -23,6 +23,7 @@ module.exports = {
     // props의 타입체크를 처리하려면 prop-types보단 차라리 typescript를 사용하는게 낫다.
     'no-underscore-dangle': ['off'],
     // camelCase를 따르는게 좋긴 하지만 `_`를 어쩔수 없이 써야하는 상황을 위해(가령 백엔드가 mongoDB)
+    'linebreak-style': 0,
   },
   settings: {
     'import/resolver': {
