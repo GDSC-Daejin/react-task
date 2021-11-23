@@ -1,14 +1,17 @@
-import './App.css';
-import { Routes, Route } from 'react-router-dom';
-import React from 'react';
-import Main from './components/Main';
+import "./App.css";
+import React from "react";
+import Navigation from "./components/navigation/Navigation";
+import { Route, Routes } from "react-router-dom";
+import Pages from "./pages/Pages";
 
 function App() {
   return (
     <>
-      <Main />
+      <Navigation />
+      <Routes>
+        <Route path="/*" element={<Pages />} />
+      </Routes>
     </>
-
   );
 }
 
