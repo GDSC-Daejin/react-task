@@ -6,7 +6,6 @@ const Navigation = () => {
   return (
     <>
       <div
-        role="button"
         onClick={() => {
           navigate('/introduce');
         }}
