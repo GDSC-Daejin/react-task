@@ -1,9 +1,10 @@
 import React from 'react';
-import { Route, Switch } from 'react-router';
+import { Route, Switch } from 'react-router-dom';
+import Introduce from './Introduce';
 
 const Pages = () => (
   <Switch>
-    <Route path="/introduce" component={Introduce.js} />
+    <Route path="/introduce" component={Introduce} />
   </Switch>
 );
 
