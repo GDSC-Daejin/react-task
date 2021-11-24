@@ -1,7 +1,7 @@
 import React from "react";
 import { useNavigate, useParams } from 'react-router-dom';
 import YellowBanner from "../../img/YellowBanner.png";
-import './styleJoinUsTeam.css';
+import './JoinUsTeam.css';
 
 import { TeamInfomation } from '../../api/teamInformation';
 

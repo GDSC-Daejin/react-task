@@ -1,8 +1,8 @@
 import React from "react";
 import { useNavigate } from 'react-router-dom';
 import BlueBanner from "../img/BlueBanner.png";
-import './styleJoinUs.css'
-import './JoinUsTeam/styleJoinUsTeam.css'
+import './JoinUs.css'
+import './JoinUsTeam/JoinUsTeam.css'
 
 import { TeamList } from '../api/teamList';
 
