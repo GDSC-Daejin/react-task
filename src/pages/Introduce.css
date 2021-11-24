@@ -1,0 +1,22 @@
+.BannerWrapper {
+    height: 200px;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+.Title {
+    font-size: 48px;
+    font-weight: bold;
+    color: #333c4b;
+}
+.SubTitle {
+    font-size: 17px;
+    font-weight: bold;
+    color: #333c4b;
+    margin-bottom: 12px;
+}
+.MainText {
+    font-size: 16px;
+    color: #4e5968;
+}
