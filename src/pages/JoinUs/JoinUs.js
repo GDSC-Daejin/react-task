@@ -1,10 +1,10 @@
 import React from "react";
 import { useNavigate } from 'react-router-dom';
-import BlueBanner from "../img/BlueBanner.png";
+import BlueBanner from "../../img/BlueBanner.png";
 import './JoinUs.css'
-import './JoinUsTeam/JoinUsTeam.css'
+import '../JoinUsTeam/JoinUsTeam.css'
 
-import { TeamList } from '../api/teamList';
+import { TeamList } from '../../api/teamList';
 
 const JoinUs = () => {
   const navigate = useNavigate();

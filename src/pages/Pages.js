@@ -3,7 +3,7 @@ import React from "react";
 import { Route, Routes } from "react-router-dom";
 import Introduce from "./Introduce";
 import Home from "./Home";
-import JoinUs from "./JoinUs";
+import JoinUs from "./JoinUs/JoinUs";
 import JoinUsTeam from "./JoinUsTeam/JoinUsTeam";
 
 const Pages = () => (
