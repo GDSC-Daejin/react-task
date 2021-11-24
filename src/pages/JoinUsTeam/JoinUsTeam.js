@@ -3,12 +3,12 @@ import { useNavigate, useParams } from 'react-router-dom';
 import YellowBanner from "../../img/YellowBanner.png";
 import './JoinUsTeam.css';
 
-import { TeamInfomation } from '../../api/teamInformation';
+import { teamInfomation } from '../../api/teamInformation';
 
 const JoinUsTeam = () => {
   const { id } = useParams ();
   const navigate = useNavigate();
-  const aboutTeam = TeamInfomation.find((aboutTeam) => aboutTeam.id === id);
+  const aboutTeam = teamInfomation.find((aboutTeam) => aboutTeam.id === id);
   return (
     <>
       <img className="BannerImg" src={YellowBanner} alt="배너" />

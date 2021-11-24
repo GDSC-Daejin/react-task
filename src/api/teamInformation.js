@@ -1,4 +1,4 @@
-export const TeamInfomation = [
+export const teamInfomation = [
   {
     id: 'android',
     name: 'Android Developer (Kotlin)',

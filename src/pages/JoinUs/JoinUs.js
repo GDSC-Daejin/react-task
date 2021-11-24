@@ -4,7 +4,7 @@ import BlueBanner from "../../img/BlueBanner.png";
 import './JoinUs.css'
 import '../JoinUsTeam/JoinUsTeam.css'
 
-import { TeamList } from '../../api/teamList';
+import { teamList } from '../../api/teamList';
 
 const JoinUs = () => {
   const navigate = useNavigate();
@@ -30,7 +30,7 @@ const JoinUs = () => {
                 <th className="TeamCategory">Skill</th>
                 <th className="TeamCategory">Stack</th>
               </tr>
-              {TeamList.map((data, key) => (
+              {teamList.map((data, key) => (
                 <tr className="TeamTableContent"
                     key={key}
                 >
