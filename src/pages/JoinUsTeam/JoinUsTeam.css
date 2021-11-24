@@ -21,6 +21,9 @@
 .TopMargin {
    height: 50px;
 }
+.SmallTopMargin {
+   height: 30px;
+}
 .ContentContainer {
    display: flex;
    justify-content: space-between;
