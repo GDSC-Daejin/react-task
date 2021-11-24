@@ -12,6 +12,13 @@ const Navigation = () => {
       >
         소개
       </div>
+      <div
+        onClick={() => {
+          navigate('/joinus');
+        }}
+      >
+        지원하기
+      </div>
     </>
   );
 };

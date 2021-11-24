@@ -1,0 +1,106 @@
+.Container {
+   width: 92%;
+   padding: 0% 4%;
+}
+.Title {
+   font-size: 40px;
+   font-weight: bolder;
+   color: #333C4B;
+}
+.BannerImg {
+   width: 100%;
+   height: 180px;
+}
+.LayoutContainer {
+   width: 100%;
+   max-width: 1140px;
+   margin: 0 auto;
+   min-width: 320px;
+   flex: 1;
+}
+.TopMargin {
+   height: 50px;
+}
+.ContentContainer {
+   display: flex;
+   justify-content: space-between;
+}
+.SubTitle {
+   font-size: 17px;
+   font-weight: bold;
+   color: #333c4b;
+   margin-bottom: 12px;
+}
+.MainText {
+   font-size: 16px;
+   color: #4e5968;
+   padding-left: 20px;
+}
+.List {
+   font-size: 16px;
+   display: list-item;
+   margin: 8px 0;
+}
+.Tage {
+   display: inline-block;
+   font-size: 16px;
+   font-weight: bold;
+   line-height: 24px;
+   color: #4e5968;
+   content: '•';
+   font-weight: inherit;
+}
+.Footer {
+   display: flex;
+   background: #f9fafb;
+   justify-content: center;
+}
+.FooterContainer {
+   width: 1140px;
+   padding: 20px 30px;
+}
+.FooterLogo {
+   padding-right: 5px;
+}
+.FooterSubTitle {
+   display: inline-block;
+   margin-top: 8px;
+   font-size: 13px;
+}
+.ApplyContainer {
+   display: flex;
+   position: sticky;
+   flex-direction: column;
+}
+.ApplyContent {
+   padding: 14px 0px;
+   display: flex;
+   border-top: 1px solid rgba(0, 29, 58, 0.18);
+}
+.ApplyList {
+   width: 90px;
+   font-size: 15px;
+   font-weight: bolder;
+   line-height: 24px;
+   color: #6B7684;
+}
+.ApplyInfo {
+   color: #3886F6;
+}
+.ApplyButton {
+   background-color: #42A5F5;
+   color: white;
+   width: 100%;
+   padding: 12px 0;
+   border-radius: 10px;
+   border-color: #42A5F5;
+}
+.ApplyButton:hover {
+   cursor: pointer;
+   background-color: #286aa8;
+}
+@media screen and (max-width: 768px) {
+   .ContentContainer {
+      flex-direction: column;
+   }
+}

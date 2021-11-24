@@ -1,0 +1,31 @@
+.TeamTable {
+   text-align: left;
+   margin: 0 auto;
+}
+.TeamTable th {
+   margin: 0;
+}
+.TeamCategory {
+   font-size: 13px;
+   font-weight: inherit;
+   padding: 24px 0 24px 20px;
+   color: rgb(139, 149, 161);
+}
+.TeamName {
+   width: 420px;
+   font-size: 18px;
+   font-weight: bold;
+   padding: 24px 0 24px 20px;
+   border-radius: 10px;
+}
+.TeamSkill, .TeamStack {
+   width: 300px;
+   font-size: 13px;
+   font-weight: inherit;
+   padding: 0 0 0 20px;
+   color: rgb(139, 149, 161);
+}
+.TeamName:hover {
+   cursor: pointer;
+   background: #f2f4f6;
+}
