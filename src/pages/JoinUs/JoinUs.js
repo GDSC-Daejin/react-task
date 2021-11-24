@@ -27,21 +27,23 @@ const JoinUs = () => {
             <table className="TeamTable">
               <tr className="TeamTableBasis">
                 <th className="TeamCategory">Team</th>
-                <th className="TeamCategory">Skill</th>
-                <th className="TeamCategory">Stack</th>
+                <th className="SubCategory">Skill</th>
+                <th className="SubCategory">Stack</th>
               </tr>
               {teamList.map((data, key) => (
-                <tr className="TeamTableContent"
+                <tr
                     key={key}
                 >
-                  <th className="TeamName" onClick={() => {
+                  <th className="TeamTableContent"
+                      colSpan="3"
+                      onClick={() => {
                     navigate('/joinus/' + data.id)
                   }}
                   >
-                    {data.name}
+                    <div className="TeamName">{data.name}</div>
+                    <div className="TeamSkill">{data.skill}</div>
+                    <div className="TeamStack">{data.stack}</div>
                   </th>
-                  <th className="TeamSkill">{data.skill}</th>
-                  <th className="TeamSkill">{data.stack}</th>
                 </tr>
               ))}
             </table>
