@@ -1,8 +1,6 @@
 import React from "react";
 import { useNavigate, useParams } from 'react-router-dom';
 import YellowBanner from "../../img/YellowBanner.png";
-import googleDevelopers from "../../img/googleDevelopers.png";
-import gdscChapterLogo from "../../img/GDSC-Chapter-Logo.png";
 import './styleJoinUsTeam.css';
 
 import { TeamInfomation } from '../../api/teamInformation';
@@ -186,18 +184,7 @@ const JoinUsTeam = () => {
         </div>
       </div>
       <div className="TopMargin" />
-      <div className="Footer">
-        <div className="FooterContainer">
-          <div className="FooterContent">
-            <div className="TopMargin" />
-            <img className="FooterLogo" src={googleDevelopers} alt="배너" style={{width: '200px'}} />
-            <div className="TopMargin" />
-            <img className="FooterLogo" src={gdscChapterLogo} alt="배너" style={{width: '300px'}} />
-            <div className="TopMargin" />
-            <div className="FooterSubTitle">Copyright © GDSC Daejin 2021</div>
-          </div>
-        </div>
-      </div>
+
     </>
   );
 };
