@@ -1,0 +1,27 @@
+.MemberCard {
+    margin-bottom: 20px;
+    width: 200px;
+}
+.NickName {
+    font-family: 'Gothic A1', sans-serif;
+    font-size: 20px;
+    margin-top: 22px;
+}
+.Name {
+    font-family: 'Gothic A1', sans-serif;
+    font-size: 13px;
+    margin-top: 10px;
+    color: #aaaaaa;
+}
+.Role {
+    color: #4385f3;
+    font-family: 'Gothic A1', sans-serif;
+    font-size: 13px;
+    margin-top: 10px;
+}
+.MemberImg {
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    border: 1px solid #9f9f9f;
+}

@@ -5,6 +5,8 @@ import { Name, NickName, Role, StyledMemberCard, MemberImg } from "./styled";
 export const MemberCard = ({ MemberInfo }: any) => {
   return (
     <>
+      <div className="MemberCard" />
+      <div className="MemberImg" />
       <div className="memberinfo" />
       <div className="StyledMemberCard">
         {MemberInfo.MemberImg ? (

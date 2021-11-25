@@ -20,10 +20,7 @@
     font-size: 16px;
     color: #4e5968;
 }
-.MemberCard {
-    margin-bottom: 20px;
-    width: 200px;
-}
+
 .MemberCardWrapper {
     width: 33.33%;
     display: flex;
@@ -31,3 +28,4 @@
     margin-bottom: 5px;
     cursor: pointer;
 }
+
