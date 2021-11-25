@@ -1,7 +1,7 @@
 import React from "react";
 
 import { Route, Routes } from "react-router-dom";
-import Introduce from "./Introduce";
+import Introduce from "../introduce/Introduce";
 import Home from "./Home";
 import JoinUs from "./JoinUs";
 

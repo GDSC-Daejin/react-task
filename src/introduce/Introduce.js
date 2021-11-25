@@ -1,6 +1,7 @@
 import React from "react";
 import GreenBanner from "../img/GreenBanner.png";
 import { memberList } from "../memberlist";
+import "./Introduce.css";
 
 const Introduce = () => {
   const introduceText =
@@ -51,7 +52,7 @@ const Introduce = () => {
           <div className="CardList">
             {memberList.map((memberInfo, id) => (
               <div className="MemberCardWrapper" key={id}>
-                <div className="MemberCard" memberInfo={memberInfo} />
+                <div memberInfo={memberInfo} />
               </div>
             ))}
           </div>
