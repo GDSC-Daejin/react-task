@@ -1,16 +1,20 @@
 import React from "react";
 import { Skeleton } from "@mui/material";
-import { Name, NickName, Role, StyledMemberCard, MemberImg } from "./styled";
+import "./MemberCard.css";
+import { memberInfo } from "../../../pages/introduce/index";
 
-export const MemberCard = ({ MemberInfo }: any) => {
+function UseMemberImg {
+    if(
+        {memberInfo.MemberImg}
+    )
+}
+
+export const MemberCard = () => {
   return (
     <>
-      <div className="MemberCard" />
-      <div className="MemberImg" />
-      <div className="memberinfo" />
       <div className="StyledMemberCard">
-        {MemberInfo.MemberImg ? (
-          <MemberImg src={MemberInfo.MemberImg} />
+        {memberInfo.MemberImg ? (
+          <div className="MemberImg" src={memberInfo.MemberImg} />
         ) : (
           <Skeleton variant="circular" width={150} height={150} />
         )}
