@@ -1,15 +1,8 @@
 import React from "react";
 import { Skeleton } from "@mui/material";
 import "./MemberCard.css";
-import { memberInfo } from "../../../pages/introduce/index";
 
-function UseMemberImg {
-    if(
-        {memberInfo.MemberImg}
-    )
-}
-
-export const MemberCard = () => {
+export const MemberCard = ({ memberInfo }) => {
   return (
     <>
       <div className="StyledMemberCard">

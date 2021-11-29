@@ -2,6 +2,7 @@ import React from "react";
 import GreenBanner from "../../img/GreenBanner.png";
 import { memberList } from "../../api/MemberList";
 import "./Introduce.css";
+import { MemberCard } from "../../components/common/membercard/MemberCard";
 
 const Index = () => {
   const introduceText =
