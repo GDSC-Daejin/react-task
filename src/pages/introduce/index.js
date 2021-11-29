@@ -1,8 +1,9 @@
 import React from "react";
 import GreenBanner from "../../img/GreenBanner.png";
-import { memberList } from "../../api/MemberList";
 import "./Introduce.css";
 import { MemberCard } from "../../components/common/membercard/MemberCard";
+import "../../components/footer/Footer";
+import { Footer } from "../../components/footer/Footer";
 
 const Index = () => {
   const introduceText =
@@ -56,15 +57,12 @@ const Index = () => {
           <div className="Title">팀 소개</div>
           <div className="TopMargin" />
           <div className="CardList">
-            {memberList.map((memberInfo, id) => (
-              <div className="MemberCardWrapper" key={id}>
-                <div memberInfo={memberInfo} />
-              </div>
-            ))}
+            <MemberCard />
           </div>
         </div>
       </div>
       <div className="TopMargin" />
+      <Footer />
     </>
   );
 };
