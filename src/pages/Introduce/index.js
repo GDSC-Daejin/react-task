@@ -1,11 +1,11 @@
 import React from "react";
 import GreenBanner from "../../img/GreenBanner.png";
-import "./Introduce.css";
-import { MemberCard } from "../../components/common/membercard/MemberCard";
-import "../../components/footer/Footer";
-import { Footer } from "../../components/footer/Footer";
+import "./introduce.css";
+import { MemberCard } from "../../components/common/MemberCard";
+import "../../components/footer";
+import { Footer } from "../../components/footer";
 
-const Index = () => {
+const Introduce = () => {
   const introduceText =
     "GDSC(Google Developer Student Clubs)은 Google Developers에서 제공하는 프로그램으로, 대학교를 기반으로 하는 개발자 커뮤니티그룹입니다. \n" +
     "GDSC의 멤버들은 peer-to-peer 학습 환경에서 역량을 키우고 공동체와 지역사회를 위한 솔루션 구축을 목표로 합니다. \n" +
@@ -67,4 +67,4 @@ const Index = () => {
   );
 };
 
-export default Index;
+export default Introduce;

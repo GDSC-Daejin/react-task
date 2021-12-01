@@ -1,5 +1,5 @@
 import React from "react";
-import "../footer/Footer.css";
+import "./footer.css";
 import googleDevelopers from "../../img/googleDevelopers.png";
 import GDSCChapterLogo from "../../img/GDSC-Chapter-Logo.png";
 

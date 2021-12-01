@@ -1,8 +1,8 @@
 import "./App.css";
 import React from "react";
-import Navigation from "./components/common/navigation/Navigation";
+import Navigation from "./components/common/Navigation";
 import { Route, Routes } from "react-router-dom";
-import Pages from "./pages/Pages";
+import Pages from "./pages";
 
 function App() {
   return (

@@ -1,6 +1,6 @@
 import React from "react";
 import { Skeleton } from "@mui/material";
-import "./MemberCard.css";
+import "./membercard.css";
 import { memberList } from "../../../api/MemberList";
 
 export const MemberCard = () => {
