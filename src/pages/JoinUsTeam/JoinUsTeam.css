@@ -1,3 +1,13 @@
+.BannerWrapper {
+   display: flex;
+   height: 200px;
+   width: 100%;
+   overflow: hidden;
+   justify-content: center;
+}
+.BannerImg {
+   height: 500px;
+}
 .Container {
    width: 100%;
    max-width: 1140px;
@@ -9,10 +19,6 @@
    font-size: 40px;
    font-weight: bolder;
    color: #333C4B;
-}
-.BannerImg {
-   width: 100%;
-   height: 180px;
 }
 .LayoutContainer {
    width: 90%;
@@ -88,15 +94,21 @@
    width: 100%;
    padding: 12px 0;
    border-radius: 10px;
-   border-color: #42A5F5;
+   border-width: 0px;
+   border-color: #4e5968;
+   cursor: pointer;
+   margin-bottom: 10px;
 }
 .ApplyButton:hover {
-   cursor: pointer;
-   background-color: #286aa8;
+   background: #3182f6;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 500px) {
+   .BannerWrapper {
+      height: 150px;
+   }
    .ContentContainer {
       flex-direction: column;
    }
 }
+
 

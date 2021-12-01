@@ -11,7 +11,9 @@ const JoinUsTeam = () => {
   const aboutTeam = teamInfomation.find((aboutTeam) => aboutTeam.id === id);
   return (
     <>
-      <img className="BannerImg" src={YellowBanner} alt="배너" />
+      <div className="BannerWrapper">
+        <img className="BannerImg" src={YellowBanner} alt="배너" />
+      </div>
       <div className="Container">
         <div className="TopMargin" />
         <div className="LayoutContainer">
@@ -168,7 +170,6 @@ const JoinUsTeam = () => {
                 >
                   지원하기
                 </button>
-                <div className="SmallTopMargin" />
                 <button className="ApplyButton"
                   onClick={() => {
                    navigate('/question');
