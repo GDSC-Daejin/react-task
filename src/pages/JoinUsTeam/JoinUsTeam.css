@@ -58,12 +58,12 @@
    display: list-item;
    margin: 8px 0;
    list-style-position: initial;
+   color: #4e5968;
 }
 .Tage {
    font-size: 16px;
    line-height: 24px;
    color: #4e5968;
-   font-weight: inherit;
 }
 .ApplyWrapper {
    width: 337px;
