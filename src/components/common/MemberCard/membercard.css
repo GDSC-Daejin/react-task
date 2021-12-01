@@ -32,3 +32,15 @@
     margin-bottom: 5px;
     cursor: pointer;
 }
+@media (max-width: 768px) {
+    .MemberCardWrapper {
+        min-width: 50%;
+        width: 50%;
+    }
+}
+@media screen and (max-width: 500px) {
+    .MemberCardWrapper {
+        min-width: 100%;
+        width: 100%;
+    }
+}
