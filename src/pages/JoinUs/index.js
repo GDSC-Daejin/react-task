@@ -11,7 +11,9 @@ const JoinUs = () => {
 
   return (
     <>
-      <img className="BannerImg" src={BlueBanner} alt="배너" />
+      <div className="BannerWrapper">
+        <img className="BannerImg" src={BlueBanner} alt="배너" />
+      </div>
       <div className="Container">
         <div className="TopMargin" />
         <div className="LayoutContainer">

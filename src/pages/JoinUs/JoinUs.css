@@ -54,13 +54,11 @@
    width: 300px;
    color: rgb(139, 149, 161);
 }
+.MobileCategoryWrapper {
+   display: none;
+}
 @media screen and (max-width: 500px) {
    .TeamCategoryWrapper, .CategoryWrapper {
-      display: none;
-   }
-}
-@media screen and (min-width: 500px) {
-   .MobileCategoryWrapper {
       display: none;
    }
 }

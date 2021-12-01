@@ -14,22 +14,39 @@ const JoinUsTeam = () => {
       <div className="BannerWrapper">
         <img className="BannerImg" src={YellowBanner} alt="배너" />
       </div>
-      <div className="Container">
-        <div className="TopMargin" />
-        <div className="LayoutContainer">
+      <div className="LayoutContainer">
+        <div className="ContainerInner">
+          <div className="TopMargin" />
           <div className="Title">{aboutTeam?.name}</div>
           <div className="TopMargin" />
-          <div className="Tage">
+          <div className="MobileApplyWrapper">
+            <div className="ApplyInner">
+              <div className="ApplyContent">
+                <div className="ApplyList">소속</div>
+                <div className="ApplyInfo">{aboutTeam?.name}</div>
+              </div>
+              <div className="ApplyContent">
+                <div className="ApplyList">합류과정</div>
+                <div className="ApplyInfo">1차 서류 - 2차 면접</div>
+              </div>
+              <div className="ApplyContent">
+                <div className="ApplyList">활동기간</div>
+                <div className="ApplyInfo">1년이상</div>
+              </div>
+              <div className="TopMargin" />
+            </div>
+          </div>
+          <div className="MainText">
             열정적인 동료를 얻기 위해 이자리에 모였습니다
-            <br/>
+          </div>
+          <div className="MainText">
             우리는 함께 고민을 나누고 도전하며 목표를 향해 달리고 있습니다.
           </div>
-          <div className="TopMargin" />
           <div className="TopMargin" />
           <div className="ContentContainer">
             <div className="ContentContainerWrapper">
               <div className="SubTitle">이런 분을 찾습니다</div>
-              <ul className="MainText">
+              <ul className="Ul">
                 <li className="List">
                   <div className="Tage">
                     코딩에 남다른 애정을 가지신 분
@@ -90,7 +107,7 @@ const JoinUsTeam = () => {
               </ul>
               <div className="TopMargin" />
               <div className="SubTitle">이런 경험이 있다면 더 좋습니다</div>
-              <ul className="MainText">
+              <ul className="Ul">
                 <li className="List">
                   <div className="Tage">
                     Github, git에 대한 경험이나 프로젝트 경험이 있는 분이면
@@ -121,7 +138,7 @@ const JoinUsTeam = () => {
               </ul>
               <div className="TopMargin" />
               <div className="SubTitle">GDSC의 혜택</div>
-              <ul className="MainText">
+              <ul className="Ul">
                 <li className="List">
                   <div className="Tage">
                     여러 국가의 GDSC 및 GDSC Korea와의 커뮤니케이션
@@ -146,7 +163,7 @@ const JoinUsTeam = () => {
               <div className="TopMargin" />
             </div>
             <div className="ApplyWrapper">
-              <div className="ApplyContainer">
+              <div className="ApplyInner">
                 <div className="ApplyContent">
                   <div className="ApplyList">소속</div>
                   <div className="ApplyInfo">{aboutTeam?.name}</div>
@@ -177,12 +194,32 @@ const JoinUsTeam = () => {
                 >
                   자주하는 질문
                 </button>
+                <div className="TopMargin" />
               </div>
             </div>
           </div>
-          <div className="TopMargin" />
+          <div className="MobileApplyButton">
+            <button className="ApplyButton"
+                    onClick={() => {
+                      window.open(
+                        'https://forms.gle/FwoDUZSCcHHow8iC7',
+                        '_blank',
+                      );
+                    }}
+            >
+              지원하기
+            </button>
+            <button className="ApplyButton"
+                    onClick={() => {
+                      navigate('/question');
+                    }}
+            >
+              자주하는 질문
+            </button>
+          </div>
         </div>
       </div>
+      <div className="TopMargin" />
     </>
   );
 };

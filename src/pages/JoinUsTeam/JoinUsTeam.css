@@ -8,21 +8,21 @@
 .BannerImg {
    height: 500px;
 }
-.Container {
+.LayoutContainer {
    width: 100%;
    max-width: 1140px;
    margin: 0 auto;
    min-width: 320px;
    flex: 1;
 }
+.ContainerInner {
+   width: 90%;
+   margin: auto;
+}
 .Title {
    font-size: 40px;
    font-weight: bolder;
    color: #333C4B;
-}
-.LayoutContainer {
-   width: 90%;
-   margin: auto;
 }
 .TopMargin {
    height: 50px;
@@ -37,6 +37,12 @@
 .ContentContainerWrapper {
    margin-right: 20px;
    box-sizing: inherit;
+   font-style: inherit;
+}
+.MainText {
+   font-size: 16px;
+   color: #4e5968;
+   padding-bottom: 10px;
 }
 .SubTitle {
    font-size: 17px;
@@ -44,29 +50,26 @@
    color: #333c4b;
    margin-bottom: 12px;
 }
-.MainText {
-   font-size: 16px;
-   color: #4e5968;
+.Ul {
    padding-left: 20px;
+   color: rgb(139, 149, 161);
 }
 .List {
-   font-size: 16px;
    display: list-item;
    margin: 8px 0;
+   list-style-position: initial;
 }
 .Tage {
-   display: inline-block;
    font-size: 16px;
    line-height: 24px;
    color: #4e5968;
-   content: '•';
    font-weight: inherit;
 }
 .ApplyWrapper {
    width: 337px;
    min-width: 250px;
 }
-.ApplyContainer {
+.ApplyInner {
    display: flex;
    position: sticky;
    width: 100%;
@@ -102,13 +105,41 @@
 .ApplyButton:hover {
    background: #3182f6;
 }
-@media screen and (max-width: 500px) {
+.MobileApplyWrapper {
+   display: none;
+}
+.MobileApplyButton {
+   display: none;
+}
+@media screen and (max-width: 768px) {
    .BannerWrapper {
       height: 150px;
+   }
+   .Title {
+      font-size: 26px;
+   }
+   .SubTitle {
+      font-size: 16px;
+   }
+   .MainText, .Tage {
+      font-size: 15px;
    }
    .ContentContainer {
       flex-direction: column;
    }
+   .ApplyInner {
+      position: initial;
+   }
+   .ApplyWrapper {
+      display: none;
+   }
+   .MobileApplyWrapper {
+      display: flex;
+   }
+   .MobileApplyButton {
+      display: flex;
+      flex-direction: column;
+      position: sticky;
+      bottom: 0px;
+   }
 }
-
-
