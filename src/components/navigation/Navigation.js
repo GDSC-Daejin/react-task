@@ -20,6 +20,19 @@ const Navigation = () => {
         지원하기
       </div>
     </>
+          navigate('/home');
+        }}
+      >
+       HOME 
+      </div>
+      <div
+        onClick={() => {
+          navigate('/Toy');
+        }}
+      >
+       Toy Projects 
+      </div>
+   </>
   );
 };
 
