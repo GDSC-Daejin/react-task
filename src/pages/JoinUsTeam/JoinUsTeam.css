@@ -1,6 +1,9 @@
 .Container {
-   width: 92%;
-   margin: auto;
+   width: 100%;
+   max-width: 1140px;
+   margin: 0 auto;
+   min-width: 320px;
+   flex: 1;
 }
 .Title {
    font-size: 40px;
@@ -12,11 +15,8 @@
    height: 180px;
 }
 .LayoutContainer {
-   width: 100%;
-   max-width: 1140px;
-   margin: 0 auto;
-   min-width: 320px;
-   flex: 1;
+   width: 90%;
+   margin: auto;
 }
 .TopMargin {
    height: 50px;
@@ -27,6 +27,10 @@
 .ContentContainer {
    display: flex;
    justify-content: space-between;
+}
+.ContentContainerWrapper {
+   margin-right: 20px;
+   box-sizing: inherit;
 }
 .SubTitle {
    font-size: 17px;
@@ -47,32 +51,20 @@
 .Tage {
    display: inline-block;
    font-size: 16px;
-   font-weight: bold;
    line-height: 24px;
    color: #4e5968;
    content: '•';
    font-weight: inherit;
 }
-.Footer {
-   display: flex;
-   background: #f9fafb;
-   justify-content: center;
-}
-.FooterContainer {
-   width: 1140px;
-   padding: 20px 30px;
-}
-.FooterLogo {
-   padding-right: 5px;
-}
-.FooterSubTitle {
-   display: inline-block;
-   margin-top: 8px;
-   font-size: 13px;
+.ApplyWrapper {
+   width: 337px;
+   min-width: 250px;
 }
 .ApplyContainer {
    display: flex;
    position: sticky;
+   width: 100%;
+   top: 100px;
    flex-direction: column;
 }
 .ApplyContent {
@@ -107,3 +99,4 @@
       flex-direction: column;
    }
 }
+

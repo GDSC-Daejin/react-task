@@ -1,10 +1,10 @@
 import React from "react";
 
 import { Route, Routes } from "react-router-dom";
-import Introduce from "./Introduce";
+import Index from "./Introduce/index";
 import Home from "./Home";
-import JoinUs from "./JoinUs/JoinUs";
-import JoinUsTeam from "./JoinUsTeam/JoinUsTeam";
+import JoinUs from "./JoinUs/index";
+import JoinUsTeam from "./JoinUsTeam/index";
 
 const Pages = () => (
   <Routes>
@@ -12,7 +12,7 @@ const Pages = () => (
     <Route path={"/"} element={<Home />} />
     <Route path={"/joinus/*"} element={<JoinUs />} />
     <Route path={"/joinus/:id/*"} element={<JoinUsTeam />} />
-    <Route path="/introduce/*" element={<Introduce />} />
+    <Route path="/introduce/*" element={<Index />} />
   </Routes>
 );
 

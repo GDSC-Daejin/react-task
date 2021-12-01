@@ -23,13 +23,9 @@ const JoinUsTeam = () => {
             우리는 함께 고민을 나누고 도전하며 목표를 향해 달리고 있습니다.
           </div>
           <div className="TopMargin" />
-        </div>
-      </div>
-      <div className="Container">
-        <div className="LayoutContainer">
           <div className="TopMargin" />
           <div className="ContentContainer">
-            <div>
+            <div className="ContentContainerWrapper">
               <div className="SubTitle">이런 분을 찾습니다</div>
               <ul className="MainText">
                 <li className="List">
@@ -147,44 +143,45 @@ const JoinUsTeam = () => {
               </ul>
               <div className="TopMargin" />
             </div>
-            <div className="ApplyContainer">
-              <div className="ApplyContent">
-                <div className="ApplyList">소속</div>
-                <div className="ApplyInfo">{aboutTeam?.name}</div>
+            <div className="ApplyWrapper">
+              <div className="ApplyContainer">
+                <div className="ApplyContent">
+                  <div className="ApplyList">소속</div>
+                  <div className="ApplyInfo">{aboutTeam?.name}</div>
+                </div>
+                <div className="ApplyContent">
+                  <div className="ApplyList">합류과정</div>
+                  <div className="ApplyInfo">1차 서류 - 2차 면접</div>
+                </div>
+                <div className="ApplyContent">
+                  <div className="ApplyList">활동기간</div>
+                  <div className="ApplyInfo">1년이상</div>
+                </div>
+                <div className="TopMargin" />
+                <button className="ApplyButton"
+                  onClick={() => {
+                    window.open(
+                      'https://forms.gle/FwoDUZSCcHHow8iC7',
+                      '_blank',
+                    );
+                  }}
+                >
+                  지원하기
+                </button>
+                <div className="SmallTopMargin" />
+                <button className="ApplyButton"
+                  onClick={() => {
+                   navigate('/question');
+                  }}
+                >
+                  자주하는 질문
+                </button>
               </div>
-              <div className="ApplyContent">
-                <div className="ApplyList">합류과정</div>
-                <div className="ApplyInfo">1차 서류 - 2차 면접</div>
-              </div>
-              <div className="ApplyContent">
-                <div className="ApplyList">활동기간</div>
-                <div className="ApplyInfo">1년이상</div>
-              </div>
-              <div className="TopMargin" />
-              <button className="ApplyButton"
-                onClick={() => {
-                  window.open(
-                    'https://forms.gle/FwoDUZSCcHHow8iC7',
-                    '_blank',
-                  );
-                }}
-              >
-                지원하기
-              </button>
-              <div className="SmallTopMargin" />
-              <button className="ApplyButton"
-                onClick={() => {
-                 navigate('/question');
-                }}
-              >
-                자주하는 질문
-              </button>
             </div>
           </div>
+          <div className="TopMargin" />
         </div>
       </div>
-      <div className="TopMargin" />
-
     </>
   );
 };
