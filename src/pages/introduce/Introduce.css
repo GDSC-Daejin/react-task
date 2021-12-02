@@ -1,0 +1,67 @@
+.BannerWrapper {
+    height: 200px;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+.Title {
+    font-size: 48px;
+    font-weight: bold;
+    color: #333c4b;
+}
+.SubTitle {
+    font-size: 17px;
+    font-weight: bold;
+    color: #333c4b;
+    margin-bottom: 12px;
+}
+.MainText {
+    font-size: 16px;
+    color: #4e5968;
+}
+
+.MemberCardWrapper {
+    width: 33.33%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+.TopMargin {
+    height: 50Px;
+}
+.List {
+    display: list-item;
+    text-align: -webkit-match-parent;
+    margin: 8px 0px;
+}
+.Tage {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    display: inline-block;
+    width: 16px;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 24px;
+    color: #8b95a1;
+    text-align: center;
+    content: '•';
+}
+.LayoutContainer {
+    position: relative;
+    width: 100%;
+    max-width: 1140px;
+    margin: 0 auto;
+    min-width: 320px;
+}
+.ContainerInner {
+    width: 92%;
+    padding: 0% 4%;
+}
+.CardList {
+    display: flex;
+    flex-wrap: wrap;
+}
+
