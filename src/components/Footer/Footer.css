@@ -1,0 +1,17 @@
+.Footer {
+   display: flex;
+   background: #f9fafb;
+   justify-content: center;
+}
+.FooterContainer {
+   width: 1140px;
+   padding: 20px 30px;
+}
+.FooterLogo {
+   padding-right: 5px;
+}
+.FooterSubTitle {
+   display: inline-block;
+   margin-top: 8px;
+   font-size: 13px;
+}

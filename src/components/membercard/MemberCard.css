@@ -1,0 +1,50 @@
+.MemberCard {
+   margin-bottom: 20px;
+   width: 200px;
+}
+.NickName {
+   font-family: 'Gothic A1', sans-serif;
+   font-size: 20px;
+   margin-top: 22px;
+}
+.Name {
+   font-family: 'Gothic A1', sans-serif;
+   font-size: 13px;
+   margin-top: 10px;
+   color: #aaaaaa;
+}
+.Role {
+   color: #4385f3;
+   font-family: 'Gothic A1', sans-serif;
+   font-size: 13px;
+   margin-top: 10px;
+}
+.MemberImg {
+   width: 200px;
+   height: 200px;
+   border-radius: 100px;
+   border: 1px solid #9f9f9f;
+}
+.MemberCardWrapper {
+   width: 33.33%;
+   display: flex;
+   justify-content: center;
+   margin-bottom: 5px;
+   cursor: pointer;
+}
+.StyledMemberCard {
+   margin-bottom: 20px;
+   width: 200px;
+}
+@media screen and (max-width: 768px) {
+   .MemberCardWrapper {
+      min-width: 50%;
+      width: 50%;
+   }
+}
+@media screen and (max-width: 500px) {
+   .MemberCardWrapper {
+      min-width: 100%;
+      width: 100%;
+   }
+}

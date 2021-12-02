@@ -1,0 +1,145 @@
+.BannerWrapper {
+   display: flex;
+   height: 200px;
+   width: 100%;
+   overflow: hidden;
+   justify-content: center;
+}
+.BannerImg {
+   height: 500px;
+}
+.LayoutContainer {
+   width: 100%;
+   max-width: 1140px;
+   margin: 0 auto;
+   min-width: 320px;
+   flex: 1;
+}
+.ContainerInner {
+   width: 90%;
+   margin: auto;
+}
+.Title {
+   font-size: 42px;
+   font-weight: bolder;
+   color: #333C4B;
+}
+.TopMargin {
+   height: 50px;
+}
+.SmallTopMargin {
+   height: 30px;
+}
+.ContentContainer {
+   display: flex;
+   justify-content: space-between;
+}
+.ContentContainerWrapper {
+   margin-right: 20px;
+   box-sizing: inherit;
+   font-style: inherit;
+}
+.MainText {
+   font-size: 16px;
+   color: #4e5968;
+   padding-bottom: 10px;
+}
+.SubTitle {
+   font-size: 17px;
+   font-weight: bold;
+   color: #333c4b;
+   margin-bottom: 12px;
+}
+.Ul {
+   padding-left: 20px;
+   color: rgb(139, 149, 161);
+}
+.List {
+   display: list-item;
+   margin: 8px 0;
+   list-style-position: initial;
+   color: #4e5968;
+}
+.Tage {
+   font-size: 16px;
+   line-height: 24px;
+   color: #4e5968;
+}
+.ApplyWrapper {
+   width: 337px;
+   min-width: 250px;
+}
+.ApplyInner {
+   display: flex;
+   position: sticky;
+   width: 100%;
+   top: 100px;
+   flex-direction: column;
+}
+.ApplyContent {
+   padding: 14px 0px;
+   display: flex;
+   border-top: 1px solid rgba(0, 29, 58, 0.18);
+}
+.ApplyList {
+   width: 90px;
+   font-size: 15px;
+   font-weight: bolder;
+   line-height: 24px;
+   color: #6B7684;
+}
+.ApplyInfo {
+   color: #3886F6;
+}
+.ApplyButton {
+   background-color: #42A5F5;
+   color: white;
+   width: 100%;
+   padding: 12px 0;
+   border-radius: 10px;
+   border-width: 0px;
+   border-color: #4e5968;
+   cursor: pointer;
+   margin-bottom: 10px;
+}
+.ApplyButton:hover {
+   background: #3182f6;
+}
+.MobileApplyWrapper {
+   display: none;
+}
+.MobileApplyButton {
+   display: none;
+}
+@media screen and (max-width: 768px) {
+   .BannerWrapper {
+      height: 150px;
+   }
+   .Title {
+      font-size: 26px;
+   }
+   .SubTitle {
+      font-size: 16px;
+   }
+   .MainText, .Tage {
+      font-size: 15px;
+   }
+   .ContentContainer {
+      flex-direction: column;
+   }
+   .ApplyInner {
+      position: initial;
+   }
+   .ApplyWrapper {
+      display: none;
+   }
+   .MobileApplyWrapper {
+      display: flex;
+   }
+   .MobileApplyButton {
+      display: flex;
+      flex-direction: column;
+      position: sticky;
+      bottom: 0px;
+   }
+}

@@ -1,0 +1,75 @@
+.TeamCategoryWrapper {
+   display: flex;
+   padding: 24px 0;
+   margin-right: 30px;
+}
+.TeamCategory {
+   display: flex;
+   align-items: center;
+   width: 500px;
+   font-size: 13px;
+   font-weight: inherit;
+   color: rgb(139, 149, 161);
+   margin-left: 30px;
+}
+.TeamSubCategory {
+   display: flex;
+   align-items: center;
+   width: 300px;
+   font-size: 13px;
+   font-weight: inherit;
+   color: rgb(139, 149, 161);
+   margin-left: 10px;
+}
+.CategoryWrapper {
+   display: flex;
+   padding: 24px 0;
+   margin-right: 30px;
+   border-radius: 10px;
+   cursor: pointer;
+}
+.CategoryWrapper:hover {
+   background: #f2f4f6;
+}
+.CategoryInner {
+   display: flex;
+   align-items: center;
+   padding-left: 30px;
+   flex-direction: row;
+   min-width: 320px;
+}
+.Category {
+   display: flex;
+   align-items: center;
+   font-size: 18px;
+   font-weight: inherit;
+   font-weight: bolder;
+   width: 500px;
+}
+.SubCategory {
+   display: flex;
+   align-items: center;
+   font-size: 13px;
+   font-weight: inherit;
+   width: 300px;
+   color: rgb(139, 149, 161);
+}
+.MobileCategoryWrapper {
+   display: none;
+}
+@media screen and (max-width: 500px) {
+   .TeamCategoryWrapper, .CategoryWrapper {
+      display: none;
+   }
+}
+@media screen and (max-width: 500px) {
+   .MobileCategoryWrapper {
+      display: flex;
+      padding: 24px 0;
+      border-radius: 10px;
+      cursor: pointer;
+   }
+   .MobileCategoryWrapper:hover {
+      background: #f2f4f6;
+   }
+}
