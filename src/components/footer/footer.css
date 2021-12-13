@@ -46,3 +46,13 @@
     display: flex;
     justify-content: center;
 }
+@media (max-width: 320px) {
+    .FooterLogo {
+        width: 150px;
+    }
+}
+@media (max-width: 320px) {
+    .FooterGDSCLogo {
+        width: 250px;
+    }
+}

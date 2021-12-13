@@ -69,3 +69,18 @@
 .BannerImg {
     height:500px;
 }
+@media (max-width: 500px) {
+    .List {
+        font-size: 15px;
+    }
+}
+@media (max-width: 500px) {
+    .TopMargin {
+        font-size: 30px;
+    }
+}
+@media (max-width: 500px) {
+    .BannerWrapper {
+       height: 150px;
+    }
+}
