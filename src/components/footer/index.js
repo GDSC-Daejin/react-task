@@ -13,7 +13,8 @@ export const Footer = () => {
         <img className="FooterGDSCLogo" src={GDSCChapterLogo} />
         <div className="TopMargin" />
         <span className="FooterSubTitle">{"Copyright © "}GDSC Daejin 2021</span>
-        <span className="FooterSubTitle">Created by Jason, Harry</span>
+        <span className="FooterSubTitle">Created by Jason </span>
+        <span className="FooterSubTitle">Designed by Harry </span>
       </div>
     </div>
   );
