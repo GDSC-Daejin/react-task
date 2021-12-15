@@ -13,6 +13,7 @@ const Introduce = () => {
     "학생이 성장할 수 있도록 전세계의 학생 Lead들과의 교류 기회, Google의 이벤트 참여, 현업 엔지니어와의 만남 등 다양한 기회를 제공하고 쇼케이스,워크샵을 통해 역량을 높일 수 있도록 돕습니다. ";
   return (
     <>
+      <div className="StyleModal"></div>
       <div className="BannerWrapper">
         <img className="BannerImg" src={GreenBanner} />
       </div>
@@ -36,22 +37,24 @@ const Introduce = () => {
           <div className="TopMargin" />
           <div className="SubTitle">합류하시면 함께할 활동입니다</div>
           <div className="MainText">
-            <li className="List">
-              <div className="Tage" />
-              GDSC 활동 중 필요한 행사를 기획하거나 관련 콘텐츠를 제작합니다.
-            </li>
-            <li className="List">
-              <div className="Tage" />
-              Google Solution Challenge, DevFest, 팀 프로젝트 등에 참여합니다.
-            </li>
-            <li className="List">
-              <div className="Tage" />
-              스터디를 개설하여 팀을 이끌거나 참여합니다.
-            </li>
-            <li className="List">
-              <div className="Tage" />
-              모르는 것을 질문하고 정보를 공유하며 활발한 커뮤니티를 만듭니다.
-            </li>
+            <ul className="Ul">
+              <li className="List">
+                <div className="Tage" />
+                GDSC 활동 중 필요한 행사를 기획하거나 관련 콘텐츠를 제작합니다.
+              </li>
+              <li className="List">
+                <div className="Tage" />
+                Google Solution Challenge, DevFest, 팀 프로젝트 등에 참여합니다.
+              </li>
+              <li className="List">
+                <div className="Tage" />
+                스터디를 개설하여 팀을 이끌거나 참여합니다.
+              </li>
+              <li className="List">
+                <div className="Tage" />
+                모르는 것을 질문하고 정보를 공유하며 활발한 커뮤니티를 만듭니다.
+              </li>
+            </ul>
           </div>
           <div className="TopMargin" />
           <div className="Title">팀 소개</div>
