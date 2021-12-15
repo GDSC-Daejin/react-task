@@ -1,6 +1,6 @@
 import React from "react";
 import GreenBanner from "../../img/GreenBanner.png";
-import "./introduce.css";
+import "./Introduce.css";
 import { MemberCard } from "../../components/membercard/MemberCard";
 
 const Index = () => {

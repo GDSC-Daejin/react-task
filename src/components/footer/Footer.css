@@ -1,48 +1,17 @@
 .Footer {
-    display: flex;
-    justify-content: center;
-    max-width: 1064px;
-    margin: auto;
-    padding: 0 67px;
-    box-sizing: border-box;
+   display: flex;
+   background: #f9fafb;
+   justify-content: center;
 }
-.FooterContent {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    max-width: 1140px;
-    padding: 10px 0px;
-}
-.FooterSubTitle {
-    display: inline-block;
-    margin-top: 8px;
-    font-size: 13px;
-}
-.FooterWrapper {
-    display: flex;
-    bottom: 0;
-    justify-content: center;
-    padding: 20px 30px;
-    background: #f9fafb;
-}
-.TopMargin {
-    height: 50Px;
+.FooterContainer {
+   width: 1140px;
+   padding: 20px 30px;
 }
 .FooterLogo {
-    width: 200px;
-    padding-right: 5px;
+   padding-right: 5px;
 }
-.FooterGDSCLogo {
-    width: 300px;
-    padding-right: 5px;
-}
-.BannerImage {
-    height: 500px;
-}
-.BannerWrapper {
-    height: 200px;
-    width: 100%;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
+.FooterSubTitle {
+   display: inline-block;
+   margin-top: 8px;
+   font-size: 13px;
 }
