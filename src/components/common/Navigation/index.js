@@ -7,7 +7,7 @@ const Navigation = () => {
     <>
       <div
         onClick={() => {
-          navigate("/introduce");
+          navigate("/Introduce");
         }}
       >
         소개

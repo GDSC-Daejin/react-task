@@ -1,12 +1,12 @@
 import React from "react";
 import { Skeleton } from "@mui/material";
-import "./MemberCard.css";
-import { memberList } from "../../../api/MemberList";
+import "./membercard.css";
+import { index } from "../../../api/membercard";
 
 export const MemberCard = () => {
   return (
     <>
-      {memberList.map((memberInfo, id) => (
+      {index.map((memberInfo, id) => (
         <>
           <div className="MemberCardWrapper">
             <div className="StyledMemberCard">
