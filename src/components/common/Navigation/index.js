@@ -12,6 +12,21 @@ const Navigation = () => {
       >
         소개
       </div>
+      <div
+        onClick={() => {
+          navigate("/CodeOfConduct");
+        }}
+      >
+        Code Of Conduct
+      </div>
+      <div>Join Us</div>
+      <div
+        onClick={() => {
+          navigate("/자주하는질문");
+        }}
+      >
+        자주하는 질문
+      </div>
     </>
   );
 };

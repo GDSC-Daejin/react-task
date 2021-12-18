@@ -2,8 +2,6 @@ import React from "react";
 import GreenBanner from "../../img/GreenBanner.png";
 import "./introduce.css";
 import { MemberCard } from "../../components/common/MemberCard";
-import "../../components/footer";
-import { Footer } from "../../components/footer";
 
 const Introduce = () => {
   const IntroduceText =
@@ -65,7 +63,6 @@ const Introduce = () => {
         </div>
       </div>
       <div className="TopMargin" />
-      <Footer />
     </>
   );
 };

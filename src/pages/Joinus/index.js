@@ -1,7 +1,7 @@
 import React from "react";
 
 const JoinUs = () => {
-  return <div>join</div>;
+  return <div>JoinUs</div>;
 };
 
 export default JoinUs;
