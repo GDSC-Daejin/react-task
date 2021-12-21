@@ -22,10 +22,10 @@ const Navigation = () => {
       <div>Join Us</div>
       <div
         onClick={() => {
-          navigate("/자주하는질문");
+          navigate("/QnA");
         }}
       >
-        자주하는 질문
+        Q&A
       </div>
     </>
   );

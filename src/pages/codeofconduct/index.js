@@ -109,16 +109,17 @@ export const CodeOfConduct = () => {
                   if (지각 3회 || 결석 1회)경고 1회
                 </li>
               </ul>
+              <div className="TopMargin" />
+              <ul className="ul">
+                <li className="List">
+                  <div className="Tage" />
+                  커뮤니티의 분위기를 흐리는 멤버라고 판단될 경우(경고가
+                  부여되며) 운영진들의 상의를 통해 제명처리될 수 있습니다.
+                </li>
+              </ul>
+            </div>
             <div className="TopMargin" />
-            <ul className="ul">
-              <li className="List">
-                <div className="Tage" />
-                커뮤니티의 분위기를 흐리는 멤버라고 판단될 경우(경고가 부여되며)
-                운영진들의 상의를 통해 제명처리될 수 있습니다.
-              </li>
-            </ul>
           </div>
-          <div className="TopMargin" />
         </div>
       </div>
     </>

@@ -75,9 +75,9 @@
         height: 150px;
     }
 }
-@media (max-width: 500px) {
+@media (max-width: 768px) {
     .Title {
-        font-size: 26px;
+        font-size: 40px;
     }
 }
 @media (max-width: 500px) {

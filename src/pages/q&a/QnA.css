@@ -1,0 +1,35 @@
+.QuestionWrapper {
+    margin-bottom: 24px;
+    cursor: pointer;
+    font-size: 20px;
+    background-color: #fff;
+    padding: 20px 20px;
+    display: flex;
+    flex-direction: row;
+    border-radius: 10px;
+}
+.QuestionMark {
+    height: 100%;
+}
+.QuestionMark::before {
+    display: flex;
+    height: 100%;
+    margin-right: 16px;
+    margin-bottom: 2px;
+    font-weight: 700;
+    content: 'Q';
+}
+.QuestionWrapper:hover {
+    background-Color: #efefef;
+    color: #3886f6;
+}
+@media (max-width: 500px) {
+    .QuestionWrapper {
+        font-size: 15px;
+    }
+}
+@media (max-width: 500px) {
+    .Title {
+        font-size: 26px;
+    }
+}
