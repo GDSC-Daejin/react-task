@@ -7,14 +7,14 @@ const Navigation = () => {
     <>
       <div
         onClick={() => {
-          navigate("/Introduce");
+          navigate("/introduce");
         }}
       >
         소개
       </div>
       <div
         onClick={() => {
-          navigate("/CodeOfConduct");
+          navigate("/codeofconduct");
         }}
       >
         Code Of Conduct
@@ -22,7 +22,7 @@ const Navigation = () => {
       <div>Join Us</div>
       <div
         onClick={() => {
-          navigate("/QnA");
+          navigate("/qna");
         }}
       >
         Q&A

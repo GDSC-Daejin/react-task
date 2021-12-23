@@ -5,6 +5,7 @@ import Home from "./Home";
 import JoinUs from "./Joinus";
 import CodeOfConduct from "./codeofconduct";
 import QnA from "./q&a/QnA";
+import QnADetail from "./q&a(detail)";
 
 const Pages = () => (
   <Routes>
@@ -13,7 +14,8 @@ const Pages = () => (
     <Route path={"/Joinus/*"} element={<JoinUs />} />
     <Route path={"/introduce/*"} element={<Introduce />} />
     <Route path={"/CodeOfConduct/*"} element={<CodeOfConduct />} />
-    <Route path={"/QnA/*"} element={<QnA />} />
+    <Route path={"/qna/*"} element={<QnA />} />
+    <Route path={"/qna/:id"} element={<QnADetail />} />
   </Routes>
 );
 

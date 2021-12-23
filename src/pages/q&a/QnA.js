@@ -4,7 +4,7 @@ import { Faq } from "../../api/faq";
 import { useNavigate } from "react-router-dom";
 import "../Introduce/introduce.css";
 import "./QnA.css";
-export const QnA = () => {
+export const Question = () => {
   const navigate = useNavigate();
   return (
     <>
@@ -20,7 +20,7 @@ export const QnA = () => {
             <div
               className="QuestionWrapper"
               key={id}
-              onClick={() => navigate("/faq/" + data.id)}
+              onClick={() => navigate("/qna/" + data.id)}
             >
               <div className="QuestionMark" />
               {data.question}
@@ -33,4 +33,4 @@ export const QnA = () => {
   );
 };
 
-export default QnA;
+export default Question;

@@ -11,7 +11,6 @@ const Introduce = () => {
     "학생이 성장할 수 있도록 전세계의 학생 Lead들과의 교류 기회, Google의 이벤트 참여, 현업 엔지니어와의 만남 등 다양한 기회를 제공하고 쇼케이스,워크샵을 통해 역량을 높일 수 있도록 돕습니다. ";
   return (
     <>
-      <div className="StyleModal"></div>
       <div className="BannerWrapper">
         <img className="BannerImg" src={GreenBanner} />
       </div>
