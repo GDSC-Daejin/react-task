@@ -1,7 +1,7 @@
 import React from "react";
 import GreenBanner from "../../img/GreenBanner.png";
 import "./introduce.css";
-import { MemberCard } from "../../components/common/MemberCard";
+import { MemberCard } from "../../components/common/MemberCard/index";
 
 const Introduce = () => {
   const IntroduceText =
