@@ -1,4 +1,4 @@
-export const index = [
+export const memberlist = [
   {
     nickName: "Jason",
     name: "정준혁",

@@ -2,6 +2,12 @@ import React from "react";
 import GreenBanner from "../../img/GreenBanner.png";
 import "./introduce.css";
 import { MemberCard } from "../../components/common/MemberCard/index";
+import {
+  listAnimate,
+  memberCardAnimate,
+} from "../../components/common/Variants/Variants";
+import { memberlist } from "../../api/memberlist";
+import { motion } from "framer-motion";
 
 const Introduce = () => {
   const IntroduceText =
@@ -9,6 +15,7 @@ const Introduce = () => {
     "GDSC의 멤버들은 peer-to-peer 학습 환경에서 역량을 키우고 공동체와 지역사회를 위한 솔루션 구축을 목표로 합니다. \n" +
     "현재 GDSC Korea는 21명의 Lead를 주축으로 21개 대학교에 선발되었으며, 기술적 성장을 위한 교육자료를 제공하고 리더십 개발을 위한 다양한 활동들을 지원합니다. \n" +
     "학생이 성장할 수 있도록 전세계의 학생 Lead들과의 교류 기회, Google의 이벤트 참여, 현업 엔지니어와의 만남 등 다양한 기회를 제공하고 쇼케이스,워크샵을 통해 역량을 높일 수 있도록 돕습니다. ";
+
   return (
     <>
       <div className="BannerWrapper">
@@ -56,9 +63,21 @@ const Introduce = () => {
           <div className="TopMargin" />
           <div className="Title">팀 소개</div>
           <div className="TopMargin" />
-          <div className="CardList">
-            <MemberCard />
-          </div>
+
+          <section variants={listAnimate} className="CardList">
+            {memberlist.map((memberInfo, id) => (
+              <motion.div
+                key={id}
+                variants={memberCardAnimate}
+                initial={"offView"}
+                whileInView={"onView"}
+                viewport={{ once: true, amount: 0.8 }}
+                className="MemberCardWrapper"
+              >
+                <MemberCard memberInfo={memberInfo} />
+              </motion.div>
+            ))}
+          </section>
         </div>
       </div>
       <div className="TopMargin" />
