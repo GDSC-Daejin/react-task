@@ -1,6 +1,6 @@
 import React from "react";
 import YellowBanner from "../../img/YellowBanner.png";
-import { Index } from "../../api/Faq/index";
+import { Faq } from "../../api/Faq/index";
 import { useNavigate } from "react-router-dom";
 import "../Introduce/introduce.css";
 import "./QnA.css";
@@ -16,7 +16,7 @@ export const Question = () => {
           <div className="TopMargin" />
           <div className="Title">자주 묻는 질문</div>
           <div className="TopMargin" />
-          {Index.map((data, id) => (
+          {Faq.map((data, id) => (
             <div
               className="QuestionWrapper"
               key={id}

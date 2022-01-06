@@ -1,13 +1,13 @@
 import React from "react";
 import YellowBanner from "../../img/YellowBanner.png";
-import { Index } from "../../api/Faq";
+import { Faq } from "../../api/Faq/index";
 import { useNavigate, useParams } from "react-router-dom";
 import "../Introduce/introduce.css";
 import "./q&a(detail).css";
 
 const QnADetail = () => {
   const { id } = useParams();
-  const faqData = Index.find((data) => data.id === Number(id));
+  const faqData = Faq.find((data) => data.id === Number(id));
   const navigate = useNavigate();
   return (
     <>

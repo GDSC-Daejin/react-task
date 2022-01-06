@@ -3,6 +3,7 @@ import "../Introduce/introduce.css";
 import BlueBanner from "../../img/BlueBanner.png";
 import { useNavigate } from "react-router";
 import { TeamList } from "../../api/TeamList/index";
+import { categoryAnimate } from "../../components/common/Variants/Variants";
 
 export const JoinUs = () => {
   const navigate = useNavigate();
@@ -68,3 +69,4 @@ export const JoinUs = () => {
     </>
   );
 };
+export default JoinUs;

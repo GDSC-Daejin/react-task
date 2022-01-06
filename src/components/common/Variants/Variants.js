@@ -29,3 +29,21 @@ export const listAnimate = {
     opacity: 0,
   },
 };
+export const categoryAnimate = {
+  unHover: {
+    clipPath: "inset(2% round 1%)",
+    background: "#fff",
+    transition: {
+      duration: 0.3,
+    },
+    opacity: 1,
+  },
+  hovered: {
+    clipPath: `inset(0% round 1%)`,
+    background: "#f2f4f6",
+    transition: {
+      duration: 0.3,
+    },
+    opacity: 1,
+  },
+};
