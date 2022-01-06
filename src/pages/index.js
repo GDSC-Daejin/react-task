@@ -4,7 +4,7 @@ import Introduce from "./Introduce";
 import Home from "./Home";
 import JoinUs from "./Joinus";
 import CodeOfConduct from "./codeofconduct";
-import QnA from "./q&a/QnA";
+import QnA from "./q&a";
 import QnADetail from "./q&a(detail)";
 
 const Pages = () => (
