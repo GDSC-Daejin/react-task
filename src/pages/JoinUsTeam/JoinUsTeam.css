@@ -1,0 +1,45 @@
+.SectionWrapper {
+    display: flex;
+    justify-content: space-between;
+}
+.IntroduceWrapper {
+    margin-right: 20px;
+    box-sizing: inherit;
+}
+.JoinWrapper {
+    width: 337px;
+    min-width: 250px;
+}
+.JoinInner {
+    display: flex;
+    position: sticky;
+    width: 100%;
+    top: 100px;
+    flex-direction: column;
+}
+.MinTitle {
+    width: 90px;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 24px;
+}
+.MinText {
+    color: #3886f6;
+}
+.ElementWrapper {
+    padding: 14px 0px;
+    display: flex;
+}
+.MoblieTopElementWrapper {
+    display: none;
+}
+.MoblieBottomElementWrapper {
+    display: none;
+    background: -webkit-linear-gradient(
+            bottom,
+            rgba(255, 255, 255, 1) 83%,
+            rgba(255, 255, 255, 0)
+    );
+    padding-top: 20px;
+}
+
