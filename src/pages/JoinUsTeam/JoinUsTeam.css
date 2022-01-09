@@ -22,6 +22,7 @@
     font-size: 15px;
     font-weight: 500;
     line-height: 24px;
+    color:#bfc4cb;
 }
 .MinText {
     color: #3886f6;
@@ -29,6 +30,7 @@
 .ElementWrapper {
     padding: 14px 0px;
     display: flex;
+    border-top: 1px solid #d1d6db;
 }
 .MoblieTopElementWrapper {
     display: none;
@@ -42,4 +44,56 @@
     );
     padding-top: 20px;
 }
+@media (max-width: 320px) {
+    .SectionWrapper {
+        flex-direction: column;
+    }
+}
+@media (max-width: 500px) {
+    .SectionWrapper {
+        flex-direction: column;
+    }
+}
+@media (max-width: 375px) {
+    .IntroduceWrapper {
+        max-width: 550px;
+    }
+}
+@media (max-width: 550px) {
+    .IntroduceWrapper {
+        max-width: 768px;
+    }
+}
+@media (max-width: 500px) {
+    .JoinWrapper {
+       display: block;
+    }
+}
+@media (max-width: 500px) {
+    .JoinInner {
+        position: initial;
+    }
+}
+@media (max-width: 320px) {
+    .JoinInner {
+        position: initial;
+    }
+}
+@media (max-width: 500px) {
+    .MoblieTopElementWrapper {
+        display: flex;
+        flex-direction: column;
+        bottom: 10px;
+    }
+}
+@media (max-width: 500px) {
+    .MoblieBottomElementWrapper {
+        display: flex;
+        flex-direction: column;
+        position: sticky;
+        bottom: 0px;
+    }
+}
+
+
 

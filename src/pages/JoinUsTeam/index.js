@@ -1,7 +1,10 @@
 import React from "react";
 import { useNavigate, useParams } from "react-router-dom";
-import BlueBanner from "../../img/BlueBanner.png"
-import "../Introduce/introduce.css"
+import BlueBanner from "../../img/BlueBanner.png";
+import "../Introduce/introduce.css";
+import "./JoinUsTeam.css";
+import { teamRecruitmentDefaultText } from "../../api/pageData/teamRecruitmentDefaultText";
+import { TeamInfomation } from "../../api/pageData/teamInfomation";
 
 const JoinUsTeam = () => {
   const { id } = useParams();
@@ -20,16 +23,16 @@ const JoinUsTeam = () => {
           <div className="MobileCategoryWrapper">
             <div className="JoinInner">
               <div className="ElementWrapper">
-                <MinTitle>소속</MinTitle>
-                <MinText>{aboutTeam?.name}</MinText>
+                <div className="MinTitle">소속</div>
+                <div className="MinText">{aboutTeam?.name}</div>
               </div>
               <div className="ElementWrapper">
-                <MinTitle>합류과정</MinTitle>
-                <MinText>1차 서류 - 2차 면접</MinText>
+                <div className="MinTitle">합류과정</div>
+                <div className="MinText">1차 서류 - 2차 면접</div>
               </div>
               <div className="ElementWrapper">
-                <MinTitle>활동기간</MinTitle>
-                <MinText>1년이상</MinText>
+                <div className="MinTitle">활동기간</div>
+                <div className="MinText">1년이상</div>
               </div>
               <div className="TopMargin" />
             </div>
@@ -47,7 +50,7 @@ const JoinUsTeam = () => {
                 <>
                   <div className="SubTitle">합류하시면 함께 할 활동입니다.</div>
                   {aboutTeam.activity.split("\n").map((line, id) => {
-                    retrun(
+                    return (
                       <div className="List" key={id}>
                         <div className="Tage" />
                         {line}
@@ -121,58 +124,55 @@ const JoinUsTeam = () => {
           <div className="JoinWrapper">
             <div className="JoinInner">
               <div className="ElementWrapper">
-                <div className="MinTitle">소속</MinTitle>
-                <div className="MinText">{aboutTeam?.name}</MinText>
+                <div className="MinTitle">소속</div>
+                <div className="MinText">{aboutTeam?.name}</div>
               </div>
               <div className="ElementWrapper">
-                <div className="MinTitle">합류과정</MinTitle>
-                <div className="MinText">1차 서류 - 2차 면접 </MinText>
+                <div className="MinTitle">합류과정</div>
+                <div className="MinText">1차 서류 - 2차 면접 </div>
               </div>
               <div className="ElementWrapper">
-                <div className="MinTitle">활동기간</MinTitle>
-                <div className="Mintext">1년이상</MinText>
+                <div className="MinTitle">활동기간</div>
+                <div className="Mintext">1년이상</div>
               </div>
               <div className="TopMargin" />
-              <div className=StyledButton
-                   onClick={() => {
-                     window.open(
-                         'https://forms.gle/FwoDUZSCcHHow8iC7',
-                         '_blank',
-                     );
-                   }}
+              <button
+                className="StyledButton"
+                onClick={() => {
+                  window.open("https://forms.gle/FwoDUZSCcHHow8iC7", "_blank");
+                }}
               >
                 지원하기
-            </div>
-              <div className=StyledButton
-                   onClick={() => {
-                     window.open(
-                         'https://forms.gle/FwoDUZSCcHHow8iC7',
-                         '_blank',
-                     );
-                   }}
+              </button>
+              <button
+                className="StyledButton"
+                onClick={() => {
+                  window.open("https://forms.gle/FwoDUZSCcHHow8iC7", "_blank");
+                }}
               >
                 자주 하는 질문
-          </div>
+              </button>
               <div className="TopMargin" />
             </div>
-            </div>
+          </div>
         </div>
         <div className="MobileCategoryWrapper">
-          <div className="StyledButton"
-               onClick={() => {
-            navigate('/question');
-          }}
+          <button
+            className="StyledButton"
+            onClick={() => {
+              navigate("/question");
+            }}
           >
             자주 하는 질문
-          </div>
-          <div className="StyledButton"
-               onClick={() => {
-                 window.open('https://forms.gle/FwoDUZSCcHHow8iC7', '_blank');
-               }}
+          </button>
+          <button
+            className="StyledButton"
+            onClick={() => {
+              window.open("https://forms.gle/FwoDUZSCcHHow8iC7", "_blank");
+            }}
           >
             지원하기
-          </div>
-        </div>
+          </button>
         </div>
       </div>
       <div className="TopMargin" />

@@ -19,7 +19,13 @@ const Navigation = () => {
       >
         Code Of Conduct
       </div>
-      <div>Join Us</div>
+      <div
+        onClick={() => {
+          navigate("/Joinus");
+        }}
+      >
+        Join Us
+      </div>
       <div
         onClick={() => {
           navigate("/qna");
