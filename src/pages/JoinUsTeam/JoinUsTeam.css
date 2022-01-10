@@ -44,6 +44,22 @@
     );
     padding-top: 20px;
 }
+.StyledButton {
+    background: #42a5f5;
+    color: white;
+    width: 100%;
+    padding: 12px 0px;
+    border-radius: 10px;
+    border-width: 1px;
+    border-color: #42a5f5;
+    border-style: inherit;
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+.StyledButton:hover {
+    background: #3886f6;
+    cursor: pointer;
+}
 @media (max-width: 320px) {
     .SectionWrapper {
         flex-direction: column;
@@ -94,6 +110,7 @@
         bottom: 0px;
     }
 }
+
 
 
 

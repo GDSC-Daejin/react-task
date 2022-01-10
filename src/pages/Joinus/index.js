@@ -4,6 +4,7 @@ import BlueBanner from "../../img/BlueBanner.png";
 import { useNavigate } from "react-router";
 import { TeamList } from "../../api/TeamList/index";
 import { categoryAnimate } from "../../components/common/Variants/Variants";
+import "../Joinus/Joinus.css";
 
 export const JoinUs = () => {
   const navigate = useNavigate();
