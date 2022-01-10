@@ -152,10 +152,7 @@ const JoinUsTeam = () => {
                 <button
                   className="StyledButton"
                   onClick={() => {
-                    window.open(
-                      "https://forms.gle/FwoDUZSCcHHow8iC7",
-                      "_blank"
-                    );
+                    navigate("/Qna");
                   }}
                 >
                   자주 하는 질문
@@ -168,10 +165,10 @@ const JoinUsTeam = () => {
             <button
               className="StyledButton"
               onClick={() => {
-                navigate("/question");
+                navigate("/qna");
               }}
             >
-              지원하기
+              자주 하는 질문
             </button>
             <button
               className="StyledButton"
@@ -179,7 +176,7 @@ const JoinUsTeam = () => {
                 window.open("https://forms.gle/FwoDUZSCcHHow8iC7", "_blank");
               }}
             >
-              자주 하는 질문
+              지원하기
             </button>
           </div>
         </div>
