@@ -1,4 +1,4 @@
-export const memberlist = [
+export const memberList = [
   {
     nickName: "Jason",
     name: "정준혁",
@@ -28,7 +28,7 @@ export const memberlist = [
   {
     nickName: "Samjong",
     name: "김지훈",
-    role: "Core Member",
+    role: "Member",
     memberImg:
       "https://ca.slack-edge.com/T02BE2ERU5A-U02D2S7GQN5-c24df3df3cea-512",
     introduce: "더 나은 미래",
@@ -59,16 +59,6 @@ export const memberlist = [
     memberImg:
       "https://ca.slack-edge.com/T02BE2ERU5A-U02CWDN14CU-557c4fe53e5e-512",
     introduce: "룰루하게 살아보아요 ^&^",
-    position: "none",
-  },
-
-  {
-    nickName: "Mini",
-    name: "신현민",
-    role: "Member",
-    memberImg:
-      "https://ca.slack-edge.com/T02BE2ERU5A-U02D2TD1K7T-81eef4628af6-512",
-    introduce: "어깨는 딸기맛 등은 초코맛",
     position: "none",
   },
   {
@@ -136,4 +126,20 @@ export const memberlist = [
     introduce: "저는 아무고토 몰라요..",
     position: "none",
   },
+];
+export const MemberNicknameData = [
+  "Jason",
+  "Harry",
+  "Want",
+  "Samjong",
+  "roccoli",
+  "Reese",
+  "Rulu",
+  "Jade",
+  "Gabi",
+  "Toby",
+  "Jimmy",
+  "Pascal",
+  "Lala",
+  "Lucy",
 ];
