@@ -13,7 +13,7 @@ import { Skeleton } from "@mui/material";
 import { Modal } from "react-rainbow-components";
 
 const Introduce = () => {
-  const [selectedMember, setSelectedMember] = useState < number > 0;
+  const [selectedMember, setSelectedMember] = useState(0);
   const [modalHandler, setModalHandler] = useState(false);
 
   return (

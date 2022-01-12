@@ -28,6 +28,7 @@
     justify-content: center;
     margin-bottom: 5px;
     cursor: pointer;
+    box-sizing: border-box;
 }
 .TopMargin {
     height: 50Px;
@@ -72,6 +73,12 @@
 .BannerImg {
     height:500px;
 }
+.StyledModal {
+    display: flex;
+    align-items: center;
+    padding: 10px 5px;
+    width: 300px;
+}
 @media (max-width: 500px) {
     .List {
         font-size: 15px;
@@ -102,3 +109,24 @@
         font-size: 15px;
     }
 }
+@media screen and (max-width: 1024px) {
+    .MemberCardWrapper {
+        width: 33.33%;
+    }
+}
+@media screen and (max-width: 768px) {
+    .MemberCardWrapper {
+        min-width: 50%;
+        width: 50%;
+    }
+}
+@media screen and (max-width: 500px) {
+    .MemberCardWrapper {
+        min-width: 100% ;
+        width: 100%;
+    }
+}
+
+
+
+
