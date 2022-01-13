@@ -75,9 +75,9 @@
 }
 .StyledModal {
     display: flex;
-    align-items: center;
+    align-items: center !important;
     padding: 10px 5px;
-    width: 300px;
+    width: 300px !important;
 }
 @media (max-width: 500px) {
     .List {
