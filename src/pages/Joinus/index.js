@@ -5,6 +5,7 @@ import { useNavigate } from "react-router";
 import { TeamList } from "../../api/TeamList/index";
 import { categoryAnimate } from "../../components/common/Variants/Variants";
 import "../Joinus/Joinus.css";
+import { motion } from "framer-motion";
 
 export const JoinUs = () => {
   const navigate = useNavigate();
@@ -32,7 +33,7 @@ export const JoinUs = () => {
           </div>
           {/*pc 환경 팀 팀스트*/}
           {TeamList.map((data, key) => (
-            <div
+            <motion.div
               className="CategoryWrapper"
               key={key}
               initial={"unHover"}
@@ -47,7 +48,7 @@ export const JoinUs = () => {
                 <div className="SubCategory">{data.skill}</div>
                 <div className="SubCategory">{data.stack}</div>
               </div>
-            </div>
+            </motion.div>
           ))}
           {/*모바일 환경 팀 리스트*/}
           {TeamList.map((data, key) => (
