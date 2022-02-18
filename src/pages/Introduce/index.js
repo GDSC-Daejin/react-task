@@ -36,7 +36,7 @@ const Introduce = () => {
         <div className="NickName">{memberList[selectedMember].nickName}</div>
         <div className="Name">{memberList[selectedMember].name}</div>
         <div className="Role">{memberList[selectedMember].role}</div>
-        <div className="Name">{memberList[selectedMember].introduce}</div>
+        <div className="introduce">{memberList[selectedMember].introduce}</div>
       </Modal>
 
       <div className="BannerWrapper">
